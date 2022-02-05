@@ -34,6 +34,10 @@ Step 2. Download and install Redis https://redis.io/download
 Step 1. cd into the go-services-challenge directory ``$ cd go-services-challenge directory``  
 Step 2. run command ``$ go mod download``  
 Step 3. run command ``$ go run main.go``  
+After running above commands the cmd will look like below
+
+![image](https://user-images.githubusercontent.com/6186495/152636431-ac5d6ec7-3a4d-49c3-9c37-fbdce360ab3f.png)
+
 
 Curl command to upload a file to end point /upload
 >curl --location --request PUT localhost:3000/upload --form file=@"<file_path>" --form userId="<userId>" --form objectName="<file_name>"
