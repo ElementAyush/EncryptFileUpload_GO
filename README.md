@@ -53,6 +53,20 @@ response will look like this:-
   "Description": "File uploaded successfully"
 }
 ```
+Browse to https://play.minio.io:9443/login  
+Put username: ``Q3AM3UQ867SPQQA43P2F``  
+And password: ``zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG``  
+    
+Click login
+    
+Then search the userId(Bucket name) and click on browse and see the uploaded file
+    
+![image](https://user-images.githubusercontent.com/6186495/152636733-713e8308-3d73-4c5d-84e6-3fdf8151ab66.png)
+
+Download the file from browser and test for the encryption [File will not open since it's the encrypted file]  
+
+    
+
 Curl command to download a file endpoint /download  
 
 > curl --location --request GET localhost:3000/download --form userId="<bucket_name>" --form objectName="<file_name>" -o <file_name>
@@ -63,6 +77,8 @@ Example: To download file kk.jpg from bucket ayudxt the curl command will look l
   
 output: 
   ![image](https://user-images.githubusercontent.com/6186495/152636045-3f4d1330-665e-4692-a0aa-fee07662f227.png)
+ 
+ Now browse to the directory and open the downloaded file and Test
 
 Checking download count in redis  
 Step 1.	Go to ``redis-cli``  
